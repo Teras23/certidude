@@ -91,9 +91,9 @@ def setup_client(prefix="client_", dh=False):
 @click.option("-f", "--fork", default=False, is_flag=True, help="Fork to background")
 @click.option("-nw", "--no-wait", default=False, is_flag=True, help="Return immideately if server doesn't autosign")
 def certidude_request(fork, renew, no_wait, kerberos):
-    rpm("openssl") or \
-    apt("openssl python-jinja2")
-    pip("jinja2 oscrypto csrbuilder asn1crypto")
+    #rpm("openssl") or \
+    #apt("openssl python-jinja2")
+    #pip("jinja2 oscrypto csrbuilder asn1crypto")
 
     import requests
     from jinja2 import Environment, PackageLoader
